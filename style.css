@@ -19,23 +19,20 @@
   }
   
   /* Top Bar */
-  .top-bar {
+  /* Condensed Top Bar */
+.top-bar {
     background-color: #1f1f1f;
     color: #bbb;
-    padding: 0.5rem 0;
+    padding: 0.25rem 0; /* Reduced vertical padding */
+    font-size: 0.8rem;  /* Slightly smaller text */
   }
   
   .top-bar .contact-info {
     display: flex;
     justify-content: flex-end;
-    gap: 1rem;
+    gap: 0.5rem; /* Reduced gap between items */
   }
   
-  .top-bar .contact-info span,
-  .top-bar .contact-info a {
-    color: #bbb;
-    text-decoration: none;
-  }
   
   /* Navigation */
   nav {

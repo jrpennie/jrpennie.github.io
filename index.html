@@ -3,109 +3,195 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Cyber Security Portfolio</title>
+  <title>John Pennie | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome for icons -->
+  <!-- Font Awesome for icons and clipart -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
         integrity="sha512-p1CmQ1+YX0H0bLSNPdTmVDe6M3VqikjdZE1yrE1mU4axKh5/+FTxwH8v6Z6Fx8vb+PIM9X7Y0u4Vx1D0nS+CTA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!-- Header and Navigation -->
+  <!-- Top Bar with Contact Info -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="contact-info">
+        <span><i class="fas fa-envelope"></i> jrpennie@proton.me</span>
+        <span><i class="fab fa-linkedin"></i> <a href="#" target="_blank">LinkedIn</a></span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
   <header>
     <nav>
-      <div class="logo">
-        <a href="#home">John Pennie</a>
-      </div>
-      <ul class="nav-links">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="hamburger">
-        <i class="fas fa-bars"></i>
+      <div class="container nav-container">
+        <div class="logo">
+          <a href="#home">John Pennie</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#resume">Resume</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+          <i class="fas fa-bars"></i>
+        </div>
       </div>
     </nav>
   </header>
 
-  <!-- Home Section -->
-  <section id="home" class="section home-section">
-    <div class="hero-content">
-      <h1>Cyber-Security Portfolio</h1>
-      
-      <a href="#projects" class="btn">Explore Projects</a>
-    </div>
-  </section>
+  <main>
+    <!-- Home Section with a Background Image -->
+    <section id="home" class="section home-section" style="background-image: url('https://via.placeholder.com/1200x800?text=Cybersecurity+Background');">
+      <div class="overlay"></div>
+      <div class="container hero-content">
+        <h1>Cybersecurity Engineer & Consultant</h1>
+        <p>Securing digital infrastructures with cutting-edge solutions.</p>
+        <a href="#resume" class="btn">View Resume</a>
+      </div>
+    </section>
 
-  <!-- About Section -->
-  <section id="about" class="section about-section">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I am a passionate cyber security professional with expertise in penetration testing,
-        network security, and incident response. I enjoy discovering vulnerabilities and
-        finding out what makes them tick.
-      </p>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
-  <section id="projects" class="section projects-section">
-    <div class="container">
-      <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <h3>PiHole</h3>
-          <p>A simple solution for a complex problem.</p>
-          <a href="#" class="btn">Learn More</a>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="container about-content">
+        <div class="about-image">
+          <img src="https://via.placeholder.com/250x250?text=Profile+Image" alt="John Pennie">
         </div>
-        <div class="project-card">
-          <h3>Homelab</h3>
-          <p>Self-built, safe enviroment to run tests.</p>
-          <a href="#" class="btn">Learn More</a>
-        </div>
-        <div class="project-card">
-          <h3>Passive-Reconnaisance Report (CSEC-388)</h3>
-          <p>An example of what I had to complete at DePaul.</p>
-          <a href="#" class="btn">Learn More</a>
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>
+            Hello, I'm John Pennie—a dedicated cybersecurity professional based in Chicago, IL. With extensive experience in engineering secure infrastructures and implementing innovative solutions, I strive to protect digital assets and maintain robust security postures. Explore my portfolio to learn more about my education, work experience, projects, and technical skills.
+          </p>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section skills-section">
-    <div class="container">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li><i class="fas fa-shield-alt"></i> Penetration Testing</li>
-        <li><i class="fas fa-network-wired"></i> Network Security</li>
-        <li><i class="fas fa-code"></i> Infrastructure Implementation</li>
-        <li><i class="fas fa-lock"></i> Incident Response</li>
-        <li><i class="fas fa-database"></i> Data Security</li>
-      </ul>
-    </div>
-  </section>
+    <!-- Resume Section -->
+    <section id="resume" class="section resume-section">
+      <div class="container">
+        <h2>Resume</h2>
+        <div class="resume-grid">
+          <!-- Education Block -->
+          <div class="resume-block">
+            <h3><i class="fas fa-graduation-cap"></i> Education</h3>
+            <div class="resume-item">
+              <h4>Bachelor Cybersecurity</h4>
+              <p>DePaul University, Chicago, IL</p>
+            </div>
+            <div class="resume-item">
+              <h4>Associate Science</h4>
+              <p>Wilbur Wright College, Chicago, IL</p>
+            </div>
+          </div>
+          <!-- Work Experience Block -->
+          <div class="resume-block">
+            <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+            <div class="resume-item">
+              <h4>Engineer @ VRQ</h4>
+              <span>January 2025 – Present | Chicago, IL</span>
+              <ul>
+                <li>Developed infrastructure for a virtual reality gaming company.</li>
+                <li>Configured systems with Palo-Alto firewalls, Windows servers, and Ubuntu servers.</li>
+                <li>Maintaining and logging the current security posture.</li>
+                <li>Configured routing between systems and different office areas.</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Engineer @ CEDAR</h4>
+              <span>January 2025 – Present | Chicago, IL</span>
+              <ul>
+                <li>Developing infrastructure for a new power grid provider.</li>
+                <li>Ensuring compliance with federal regulations and industry standards.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section contact-section">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <form id="contact-form">
-        <input type="text" id="name" name="name" placeholder="Your Name" required />
-        <input type="email" id="email" name="email" placeholder="Your Email" required />
-        <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
-      <div id="form-message"></div>
-    </div>
-  </section>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <img src="https://via.placeholder.com/400x200?text=PiHole" alt="PiHole Project">
+            <h3>PiHole | Skills Used</h3>
+            <span>December 2024 – Present</span>
+            <ul>
+              <li>Utilizing PiHole to filter network traffic.</li>
+              <li>Running PiHole in a Docker container within a Proxmox virtual machine.</li>
+              <li>Filtering out unsolicited ads and trackers.</li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <img src="https://via.placeholder.com/400x200?text=Homelab" alt="Homelab Project">
+            <h3>Homelab | Skills Used</h3>
+            <span>January 2024 – Present</span>
+            <ul>
+              <li>Simulating red/blue team exercises.</li>
+              <li>Built using second-hand equipment and open-source operating systems.</li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <img src="https://via.placeholder.com/400x200?text=Capture+the+Flag" alt="Capture the Flag">
+            <h3>Capture the Flag | Skills Used</h3>
+            <span>November 2024 – December 2024</span>
+            <ul>
+              <li>Recovered 7 out of 9 flags in a course at DePaul.</li>
+              <li>Worked with Windows hosts and Linux servers.</li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <img src="https://via.placeholder.com/400x200?text=Passive+Reconnaissance" alt="Passive Reconnaissance">
+            <h3>Passive Reconnaissance | Skills Used</h3>
+            <span>October 2024 – November 2024</span>
+            <ul>
+              <li>Prepared a passive reconnaissance report on a selected company for a course at DePaul.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section skills-section">
+      <div class="container">
+        <h2>Technical Skills</h2>
+        <div class="skills-content">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <p>Python, Java, C/C++</p>
+          </div>
+          <div class="skill-group">
+            <h3>Developer Tools</h3>
+            <p>Git, Docker, Visual Studio Code, Eclipse, Proxmox, Vmware, Nmap, Metasploit</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="container">
+        <h2>Contact Me</h2>
+        <form id="contact-form">
+          <input type="text" id="name" name="name" placeholder="Your Name" required>
+          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <textarea id="message" name="message" placeholder="Your Message" required></textarea>
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+        <div id="form-message"></div>
+      </div>
+    </section>
+  </main>
 
   <!-- Footer -->
   <footer>
-    <div class="container">
+    <div class="container footer-container">
       <p>&copy; 2025 John Pennie. All rights reserved.</p>
       <div class="social-links">
         <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
@@ -115,7 +201,6 @@
     </div>
   </footer>
 
-  <!-- JavaScript -->
   <script src="script.js"></script>
 </body>
 </html>

@@ -5,13 +5,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>John Pennie | Cybersecurity Portfolio</title>
   <link rel="stylesheet" href="style.css" />
-  <!-- Font Awesome for icons and clipart -->
+  <!-- Font Awesome for icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
         integrity="sha512-p1CmQ1+YX0H0bLSNPdTmVDe6M3VqikjdZE1yrE1mU4axKh5/+FTxwH8v6Z6Fx8vb+PIM9X7Y0u4Vx1D0nS+CTA==" 
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-  <!-- Top Bar with Contact Info -->
+  <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
       <div class="contact-info">
@@ -33,6 +33,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#resume">Resume</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#documents">Documents</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
@@ -44,7 +45,7 @@
   </header>
 
   <main>
-    <!-- Home Section with a Background Image -->
+    <!-- Home Section -->
     <section id="home" class="section home-section" style="background-image: url('https://via.placeholder.com/1200x800?text=Cybersecurity+Background');">
       <div class="overlay"></div>
       <div class="container hero-content">
@@ -58,12 +59,12 @@
     <section id="about" class="section about-section">
       <div class="container about-content">
         <div class="about-image">
-          <img src="https://via.placeholder.com/250x250?text=Profile+Image" alt="John Pennie">
+          <img src="https://via.placeholder.com/250?text=Profile" alt="John Pennie">
         </div>
         <div class="about-text">
           <h2>About Me</h2>
           <p>
-            Hello, I'm John Pennie—a dedicated cybersecurity professional based in Chicago, IL. With extensive experience in engineering secure infrastructures and implementing innovative solutions, I strive to protect digital assets and maintain robust security postures. Explore my portfolio to learn more about my education, work experience, projects, and technical skills.
+            I'm John Pennie, a dedicated cybersecurity professional based in Chicago, IL. With extensive experience in engineering secure infrastructures and implementing innovative solutions, I specialize in protecting digital assets and maintaining robust security postures. Explore my portfolio to learn more about my background, work, and projects.
           </p>
         </div>
       </div>
@@ -94,8 +95,8 @@
               <span>January 2025 – Present | Chicago, IL</span>
               <ul>
                 <li>Developed infrastructure for a virtual reality gaming company.</li>
-                <li>Configured systems with Palo-Alto firewalls, Windows servers, and Ubuntu servers.</li>
-                <li>Maintaining and logging the current security posture.</li>
+                <li>Configured systems using Palo-Alto firewalls, Windows servers, and Ubuntu servers.</li>
+                <li>Maintained and logged the current security posture.</li>
                 <li>Configured routing between systems and different office areas.</li>
               </ul>
             </div>
@@ -141,8 +142,8 @@
             <h3>Capture the Flag | Skills Used</h3>
             <span>November 2024 – December 2024</span>
             <ul>
-              <li>Recovered 7 out of 9 flags in a course at DePaul.</li>
-              <li>Worked with Windows hosts and Linux servers.</li>
+              <li>Recovered 7 out of 9 flags during a DePaul course.</li>
+              <li>Tested on Windows hosts and Linux servers.</li>
             </ul>
           </div>
           <div class="project-card">
@@ -150,10 +151,20 @@
             <h3>Passive Reconnaissance | Skills Used</h3>
             <span>October 2024 – November 2024</span>
             <ul>
-              <li>Prepared a passive reconnaissance report on a selected company for a course at DePaul.</li>
+              <li>Prepared a passive reconnaissance report on a selected company for a DePaul course.</li>
             </ul>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Documents Section -->
+    <section id="documents" class="section documents-section">
+      <div class="container">
+        <h2>Documents</h2>
+        <p>Upload your documents (PDFs, images, etc.) for a neat preview:</p>
+        <input type="file" id="document-input" multiple accept=".pdf, image/*, .doc, .docx, .txt">
+        <div id="documents-list" class="documents-list"></div>
       </div>
     </section>
 
@@ -179,8 +190,8 @@
       <div class="container">
         <h2>Contact Me</h2>
         <form id="contact-form">
-          <input type="text" id="name" name="name" placeholder="Your Name" required>
-          <input type="email" id="email" name="email" placeholder="Your Email" required>
+          <input type="text" id="name" name="name" placeholder="Your Name" required />
+          <input type="email" id="email" name="email" placeholder="Your Email" required />
           <textarea id="message" name="message" placeholder="Your Message" required></textarea>
           <button type="submit" class="btn">Send Message</button>
         </form>

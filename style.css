@@ -180,26 +180,7 @@
   /* Resume Section */
   .resume-section {
     background-color: #181818;
-    padding: 0;
-    position: relative;
-  }
-  
-  /* Fullscreen, Scrollable Embedded PDF */
-  .resume-embed {
-    width: 100vw;
-    height: 100vh;
-    overflow-y: auto;
-  }
-  
-  .resume-embed iframe {
-    width: 100%;
-    height: 100%;
-    border: none;
-  }
-  
-  /* Resume Details (Text Version) */
-  .resume-details {
-    padding: 2rem;
+    padding: 2rem 0;
   }
   
   .resume-details h2 {

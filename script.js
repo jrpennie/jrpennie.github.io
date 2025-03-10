@@ -38,14 +38,5 @@ document.addEventListener("DOMContentLoaded", () => {
       formMessage.style.color = "#00adb5";
       contactForm.reset();
     });
-  
-    // Documents Section - File Input Preview
-    const documentInput = document.getElementById('document-input');
-    const documentsList = document.getElementById('documents-list');
-  
-    documentInput.addEventListener('change', (event) => {
-      const files = event.target.files;
-      documentsList.innerHTML = ''; // Clear previous documents
-      Array.from(files).forEach(file => {
-        const card = document.createElement('div');
+  });
   

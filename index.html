@@ -5,30 +5,40 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>John Pennie | Cybersecurity Portfolio</title>
   <link rel="icon" href="https://pngimg.com/d/hacker_PNG16.png" type="image/png">
+
   <link rel="stylesheet" href="style.css" />
+
   <!-- Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" 
-        integrity="sha512-p1CmQ1+YX0H0bLSNPdTmVDe6M3VqikjdZE1yrE1mU4axKh5/+FTxwH8v6Z6Fx8vb+PIM9X7Y0u4Vx1D0nS+CTA==" 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-p1CmQ1+YX0H0bLSNPdTmVDe6M3VqikjdZE1yrE1mU4axKh5/+FTxwH8v6Z6Fx8vb+PIM9X7Y0u4Vx1D0nS+CTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
   <!-- Top Bar -->
   <div class="top-bar">
     <div class="container">
-      <div class="contact-info">
-        <span><i class="fas fa-envelope"></i> jrpennie@proton.me</span>
-        <span><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/john-pennie/" target="_blank">LinkedIn</a></span>
+      <div class="top-bar__row">
+        <div class="contact-info">
+          <span><i class="fas fa-envelope"></i> jrpennie@proton.me</span>
+        </div>
+        <div class="contact-info">
+          <span><i class="fab fa-linkedin"></i>
+            <a href="https://www.linkedin.com/in/john-pennie/" target="_blank" rel="noreferrer">LinkedIn</a>
+          </span>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- Navigation -->
-  <header>
-    <nav>
+  <header class="site-header">
+    <nav class="site-nav">
       <div class="container nav-container">
         <div class="logo">
           <a href="#home">John Pennie</a>
         </div>
+
         <ul class="nav-links">
           <li><a href="#home">Home</a></li>
           <li><a href="#about">About</a></li>
@@ -38,7 +48,8 @@
           <li><a href="#skills">Skills</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="hamburger">
+
+        <div class="hamburger" aria-label="Open navigation menu" role="button" tabindex="0">
           <i class="fas fa-bars"></i>
         </div>
       </div>
@@ -47,39 +58,60 @@
 
   <!-- Main Content -->
   <main>
+
     <!-- Home Section with VANTA.NET Background -->
     <section id="home" class="section home-section">
-      <!-- VANTA.NET will render the animated background on this element -->
+      <!-- VANTA.NET renders on #home -->
       <div class="overlay"></div>
+
       <div class="container hero-content">
-        <h1>Cybersecurity Engineer & Consultant</h1>
-        <p>Securing digital infrastructures with innovative solutions.</p>
-        <a href="#resume" class="btn">View Resume</a>
+        <div class="hero__inner">
+          <h1>Cybersecurity Engineer & Consultant</h1>
+          <p>Securing digital infrastructures with innovative solutions.</p>
+
+          <div class="hero__actions">
+            <a href="#resume" class="btn btn-primary">View Resume</a>
+            <a href="#projects" class="btn btn-ghost">View Projects</a>
+          </div>
+        </div>
       </div>
     </section>
 
     <!-- About Section -->
     <section id="about" class="section about-section">
-      <div class="container about-content">
-        <div class="about-image">
-          <img src="https://pngimg.com/d/hacker_PNG16.png" alt="John Pennie">
-        </div>
-        <div class="about-text">
+      <div class="container">
+        <div class="section-header">
           <h2>About Me</h2>
-          <p>
-            John Pennie-- a dedicated cybersecurity professional based in Chicago, IL. With extensive experience in engineering secure infrastructures and implementing innovative solutions, I specialize in protecting digital assets and maintaining robust security postures.
-          </p>
+          <div class="divider"></div>
+        </div>
+
+        <div class="about-content card">
+          <div class="about-image">
+            <!-- KEEP IMAGE SAME -->
+            <img src="https://pngimg.com/d/hacker_PNG16.png" alt="John Pennie">
+          </div>
+          <div class="about-text">
+            <p>
+              John Pennie-- a dedicated cybersecurity professional based in Chicago, IL. With extensive experience in engineering
+              secure infrastructures and implementing innovative solutions, I specialize in protecting digital assets and maintaining
+              robust security postures.
+            </p>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Resume Section (Text Details Only) -->
+    <!-- Resume Section -->
     <section id="resume" class="section resume-section">
-      <div class="container resume-details">
-        <h2>Resume</h2>
+      <div class="container">
+        <div class="section-header centered">
+          <h2>Resume</h2>
+          <div class="divider"></div>
+        </div>
+
         <div class="resume-grid">
           <!-- Education -->
-          <div class="resume-block">
+          <div class="resume-block card">
             <h3><i class="fas fa-graduation-cap"></i> Education</h3>
             <div class="resume-item">
               <h4>Bachelor of Science in Cybersecurity</h4>
@@ -90,9 +122,11 @@
               <p>Wilbur Wright College, Chicago, IL</p>
             </div>
           </div>
+
           <!-- Work Experience -->
-          <div class="resume-block">
+          <div class="resume-block card">
             <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+
             <div class="resume-item">
               <h4>Engineer @ VRQ</h4>
               <span>January 2025 – June 2025 | Chicago, IL</span>
@@ -103,6 +137,7 @@
                 <li>Configured routing between systems and different office areas.</li>
               </ul>
             </div>
+
             <div class="resume-item">
               <h4>Engineer @ CEDAR</h4>
               <span>January 2025 – June 2025 | Chicago, IL</span>
@@ -111,6 +146,7 @@
                 <li>Ensuring compliance with federal regulations and industry standards.</li>
               </ul>
             </div>
+
           </div>
         </div>
       </div>
@@ -119,44 +155,65 @@
     <!-- Projects Section -->
     <section id="projects" class="section projects-section">
       <div class="container">
-        <h2>Projects</h2>
+        <div class="section-header centered">
+          <h2>Projects</h2>
+          <div class="divider"></div>
+        </div>
+
         <div class="projects-grid">
-          <div class="project-card">
+
+          <div class="project-card card">
+            <!-- KEEP IMAGE SAME -->
             <img src="https://upload.wikimedia.org/wikipedia/commons/0/00/Pi-hole_Logo.png" alt="PiHole Project">
-            <h3>PiHole | Skills Used</h3>
-            <span>December 2024 – Present</span>
-            <ul>
-              <li>Utilizing PiHole to filter network traffic.</li>
-              <li>Running PiHole in a Docker container within a Proxmox virtual machine.</li>
-              <li>Filtering out unsolicited ads and trackers.</li>
-            </ul>
+            <div class="card-body">
+              <h3>PiHole | Skills Used</h3>
+              <span class="muted">December 2024 – Present</span>
+              <ul>
+                <li>Utilizing PiHole to filter network traffic.</li>
+                <li>Running PiHole in a Docker container within a Proxmox virtual machine.</li>
+                <li>Filtering out unsolicited ads and trackers.</li>
+              </ul>
+            </div>
           </div>
-          <div class="project-card">
+
+          <div class="project-card card">
+            <!-- KEEP IMAGE SAME -->
             <img src="https://avatars.githubusercontent.com/u/73596424?s=280&v=4" alt="Homelab Project">
-            <h3>Homelab | Skills Used</h3>
-            <span>January 2024 – Present</span>
-            <ul>
-              <li>Simulating red/blue team exercises.</li>
-              <li>Built using second-hand equipment and open-source operating systems.</li>
-            </ul>
+            <div class="card-body">
+              <h3>Homelab | Skills Used</h3>
+              <span class="muted">January 2024 – Present</span>
+              <ul>
+                <li>Simulating red/blue team exercises.</li>
+                <li>Built using second-hand equipment and open-source operating systems.</li>
+              </ul>
+            </div>
           </div>
-          <div class="project-card">
+
+          <div class="project-card card">
+            <!-- KEEP IMAGE SAME -->
             <img src="https://www.errietta.me/blog/wp-content/uploads/2021/04/ctf.png" alt="Capture the Flag">
-            <h3>Capture the Flag | Skills Used</h3>
-            <span>November 2024 – December 2024</span>
-            <ul>
-              <li>Recovered 7 out of 9 flags during a DePaul course.</li>
-              <li>Tested on Windows hosts and Linux servers.</li>
-            </ul>
+            <div class="card-body">
+              <h3>Capture the Flag | Skills Used</h3>
+              <span class="muted">November 2024 – December 2024</span>
+              <ul>
+                <li>Recovered 7 out of 9 flags during a DePaul course.</li>
+                <li>Tested on Windows hosts and Linux servers.</li>
+              </ul>
+            </div>
           </div>
-          <div class="project-card">
+
+          <div class="project-card card">
+            <!-- KEEP IMAGE SAME -->
             <img src="https://png.pngtree.com/png-vector/20220930/ourmid/pngtree-credit-vector-financial-reconnaissance-vector-png-image_34019990.png" alt="Passive Reconnaissance">
-            <h3>Passive Reconnaissance | Skills Used</h3>
-            <span>October 2024 – November 2024</span>
-            <ul>
-              <li>Prepared a passive reconnaissance report on a selected company for a DePaul course.</li>
-            </ul>
+            <div class="card-body">
+              <h3>Passive Reconnaissance | Skills Used</h3>
+              <span class="muted">October 2024 – November 2024</span>
+              <ul>
+                <li>Prepared a passive reconnaissance report on a selected company for a DePaul course.</li>
+              </ul>
+            </div>
           </div>
+
         </div>
       </div>
     </section>
@@ -164,24 +221,33 @@
     <!-- Documents Section -->
     <section id="documents" class="section documents-section">
       <div class="container">
-        <h2>Documents</h2>
-        <p>Below are my documents for your viewing:</p>
+        <div class="section-header centered">
+          <h2>Documents</h2>
+          <div class="divider"></div>
+        </div>
+
+        <p class="center muted">Below are my documents for your viewing:</p>
+
         <div class="documents-list">
-          <div class="document-card">
+
+          <div class="document-card card">
             <i class="fas fa-file-pdf"></i>
             <p>Resume.pdf</p>
-            <a href="resumev3.pdf" target="_blank" class="btn">View Document</a>
+            <a href="resumev3.pdf" target="_blank" class="btn btn-primary btn-sm" rel="noreferrer">View Document</a>
           </div>
-          <div class="document-card">
+
+          <div class="document-card card">
             <i class="fas fa-file-alt"></i>
             <p>Capture-the-Flag.pdf</p>
-            <a href="CTF.pdf" target="_blank" class="btn">View Document</a>
+            <a href="CTF.pdf" target="_blank" class="btn btn-primary btn-sm" rel="noreferrer">View Document</a>
           </div>
-          <div class="document-card">
+
+          <div class="document-card card">
             <i class="fas fa-file-alt"></i>
             <p>Passive-Reconnaissance.pdf</p>
-            <a href="recon.pdf" target="_blank" class="btn">View Document</a>
+            <a href="recon.pdf" target="_blank" class="btn btn-primary btn-sm" rel="noreferrer">View Document</a>
           </div>
+
         </div>
       </div>
     </section>
@@ -189,15 +255,20 @@
     <!-- Skills Section -->
     <section id="skills" class="section skills-section">
       <div class="container">
-        <h2>Technical Skills</h2>
+        <div class="section-header centered">
+          <h2>Technical Skills</h2>
+          <div class="divider"></div>
+        </div>
+
         <div class="skills-content">
-          <div class="skill-group">
+          <div class="skill-group card">
             <h3>Languages</h3>
-            <p>Python, Java, C/C++</p>
+            <p class="muted">Python, Java, C/C++</p>
           </div>
-          <div class="skill-group">
+
+          <div class="skill-group card">
             <h3>Developer Tools</h3>
-            <p>Git, Docker, Visual Studio Code, Eclipse, Proxmox, Vmware, Nmap, Metasploit</p>
+            <p class="muted">Git, Docker, Visual Studio Code, Eclipse, Proxmox, Vmware, Nmap, Metasploit</p>
           </div>
         </div>
       </div>
@@ -206,16 +277,22 @@
     <!-- Contact Section -->
     <section id="contact" class="section contact-section">
       <div class="container">
-        <h2>Contact Me</h2>
-        <form id="contact-form">
+        <div class="section-header centered">
+          <h2>Contact Me</h2>
+          <div class="divider"></div>
+        </div>
+
+        <form id="contact-form" class="card">
           <input type="text" id="name" name="name" placeholder="Your Name" required />
           <input type="email" id="email" name="email" placeholder="Your Email" required />
           <textarea id="message" name="message" placeholder="Your Message" required></textarea>
-          <button type="submit" class="btn">Send Message</button>
+          <button type="submit" class="btn btn-primary">Send Message</button>
         </form>
+
         <div id="form-message"></div>
       </div>
     </section>
+
   </main>
 
   <!-- Footer -->
@@ -223,9 +300,9 @@
     <div class="container footer-container">
       <p>&copy; 2025 John Pennie. All rights reserved.</p>
       <div class="social-links">
-        <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-github"></i></a>
-        <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.linkedin.com/in/john-pennie/" target="_blank" rel="noreferrer"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/jrpennie" target="_blank" rel="noreferrer"><i class="fab fa-github"></i></a>
+        <a href="#" target="_blank" rel="noreferrer"><i class="fab fa-twitter"></i></a>
       </div>
     </div>
   </footer>
@@ -243,8 +320,8 @@
       minWidth: 200.00,
       scale: 1.00,
       scaleMobile: 1.00,
-      color: 0xa5f3c,
-      backgroundColor: 0x0
+      color: 0x0a5f3c,
+      backgroundColor: 0x000000
     });
   </script>
 

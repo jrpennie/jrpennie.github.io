@@ -1,0 +1,17 @@
+.venv
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+.Python
+.pytest_cache
+.mypy_cache
+*.log
+node_modules
+.git
+.gitignore
+.DS_Store
+*.ipynb_checkpoints
+*.swp
+*.swo
+*.env

@@ -3,7 +3,7 @@
 **Live site:** https://jrpennie.us/  
 **Repo:** https://github.com/jrpennie/Portfolio
 
-![Portfolio Preview](assets/preview.png)
+![Portfolio Preview](docs/preview.png)
 
 ## Overview
 This repository hosts my personal cybersecurity portfolio website. It includes my resume, selected projects, supporting documents, and contact information.

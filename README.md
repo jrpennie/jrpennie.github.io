@@ -1,6 +1,6 @@
 # John Pennie | Cybersecurity Portfolio
 
-**Live site:** https://jrpennie.github.io/  
+**Live site:** https://jrpennie.us/  
 **Repo:** https://github.com/jrpennie/Portfolio
 
 ![Portfolio Preview](assets/preview.png)

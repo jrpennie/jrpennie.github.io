@@ -363,6 +363,20 @@ body {
   color: rgba(255,255,255,0.75);
 }
 
+.projects-grid {
+  --grid-gap: 1.1rem;
+  gap: var(--grid-gap);
+}
+
+/* Center the last/special card, but keep it exactly 1-column wide */
+.project-card--center {
+  grid-column: 1 / -1; /* take the whole row so we can center */
+  justify-self: center;
+
+  /* width of ONE column in a 4-col grid (accounting for 3 gaps) */
+  width: calc((100% - (3 * var(--grid-gap))) / 4);
+}
+
 /* Documents Section */
 .documents-section {
   background-color: #1f1f1f;

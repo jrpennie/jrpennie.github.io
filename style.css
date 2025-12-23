@@ -9,7 +9,9 @@
   --bg: #121212;
   --panel: rgba(255,255,255,0.06);
   --panel2: rgba(255,255,255,0.09);
-  --border: rgba(255,255,255,0.12);
+  --border: rgba(255,255,255,0.12);.project-card--center {
+  grid-column: 2 / span 2; /* centers in a 4-column grid */
+}
   --text: #f0f0f0;
   --muted: #bdbdbd;
   --accent: #00adb5;
@@ -330,7 +332,9 @@ body {
 }
 
 .project-card--center {
-  grid-column: 2 / span 2; /* centers in a 4-column grid */
+  grid-column: 1 / -1;   /* full row */
+  max-width: 25%;        /* same width as 1 column */
+  justify-self: center;  /* center horizontally */
 }
 
 .project-card img {
@@ -474,6 +478,12 @@ footer {
 @media (max-width: 1100px) {
   .projects-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 1100px) {
+  .project-card--center {
+    max-width: 100%;
   }
 }
 

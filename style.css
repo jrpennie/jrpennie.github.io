@@ -324,23 +324,20 @@ body {
 
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.1rem;
-  justify-content: center;
-}
 
-.project-card {
-  width: 100%;
+  /* Responsive, stable grid */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+
+  /* IMPORTANT: prevent weird stretching / spanning effects */
+  align-items: stretch;
+  justify-items: stretch;
 }
 
 .project-card {
   overflow: hidden;
-}
-
-.project-card--center {
-  grid-column: 1 / -1;   /* full row */
-  max-width: 25%;        /* same width as 1 column */
-  justify-self: center;  /* center horizontally */
+  width: 100%;
+  min-width: 0; /* prevents overflow pushing columns weirdly */
 }
 
 .project-card img {
@@ -368,19 +365,6 @@ body {
   color: rgba(255,255,255,0.75);
 }
 
-.projects-grid {
-  --grid-gap: 1.1rem;
-  gap: var(--grid-gap);
-}
-
-/* Center the last/special card, but keep it exactly 1-column wide */
-.project-card--center {
-  grid-column: 1 / -1; /* take the whole row so we can center */
-  justify-self: center;
-
-  /* width of ONE column in a 4-col grid (accounting for 3 gaps) */
-  width: calc((100% - (3 * var(--grid-gap))) / 4);
-}
 
 /* Documents Section */
 .documents-section {

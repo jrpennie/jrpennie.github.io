@@ -329,6 +329,10 @@ body {
   overflow: hidden;
 }
 
+.project-card--center {
+  grid-column: 2 / span 2; /* centers in a 4-column grid */
+}
+
 .project-card img {
   width: 100%;
   height: 150px;

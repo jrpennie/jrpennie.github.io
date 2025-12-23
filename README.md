@@ -65,9 +65,3 @@ Web-based application deployed under a subdomain with a live demo and source cod
 - HTML / CSS / JavaScript
 - GitHub Pages
 
-## Run Locally
-You can open `index.html` directly, but a local web server is recommended:
-
-### Python
-```bash
-python3 -m http.server 5173
